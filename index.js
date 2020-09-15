@@ -25,7 +25,13 @@ function makeTable() {
   });
 }
 
+function getSumPeople() {
+  number.textContent = ` = ${sumOfPeople}`;
+}
+
 function makeFire() {
+  sumOfPeople = sumOfPeople - 1;
+  getSumPeople();
   const arrCheck = [...document.querySelectorAll("#check")];
   const arrFilter = arrCheck.filter((item) => {
     if (item.checked) {
@@ -110,7 +116,7 @@ function dateDown() {
 addBtn.addEventListener("click", (event) => {
   event.preventDefault();
   sumOfPeople += 1;
-  number.textContent = ` = ${sumOfPeople}`;
+  getSumPeople();
   arr.push({
     name: name.value,
     year: year.value,
