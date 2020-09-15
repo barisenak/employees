@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input id="name" type="text" placeholder="name" />
+      <input id="year" type="text" placeholder="year of birth" />
+      <input id="date" type="date" />
+      <input id="salary" type="text" placeholder="salary, $" />
+      <button id="addBtn">ADD</button>
+    </form>
+    <p>Number of employees<span id="number"></span></p>
+    <p>Sum<span id="sum"></span></p>
+    <table class="tableStyle">
+      <thead>
+        <tr>
+          <td></td>
+          <td class="cell">Name</td>
+          <td class="cell">Year of birth<span id="upAge"> &#9650</span><span id="downAge"> &#9660</span></td>
+          <td class="cell">Date of recruitment<span id="upDate"> &#9650</span><span id="downDate"> &#9660</span></td>
+          <td class="cell">Salary,$</td>
+        </tr>
+      </thead>
+      <tbody id="table"></tbody>
+    </table>
+    <button id="fireBtn">Fire</button>
+    <button id="sumBtn">Sum</button>
+    <script src="index.js"></script>
+  </body>
+</html>

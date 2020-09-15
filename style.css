@@ -1,0 +1,14 @@
+.cell {
+  border: 1px solid black;
+}
+
+.tableStyle {
+  margin: 0 auto;
+}
+
+#upAge,
+#upDate,
+#downDate,
+#downAge:hover {
+  cursor: pointer;
+}
